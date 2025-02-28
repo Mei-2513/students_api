@@ -30,9 +30,8 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    curl -X GET http://localhost:5000/students
    ```
 
-   **Ejemplo de respuesta:**
-   json
-   [{ "carrera": "Ingeniería", "edad": 22, "id": 2, "nombre": "Juan" }]
+   **Ejemplo de respuesta:[{ "carrera": "Ingeniería", "edad": 22, "id": 2, "nombre": "Juan" }]**
+  
 
 
 5. Para agregar un nuevo estudiante:
@@ -41,8 +40,8 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    curl -X POST http://localhost:5000/students -H "Content-Type: application/json" -d '{ "nombre": "Juan", "edad": 22, "carrera": "Ingeniería" }'
    ```
 
-   **Respuesta:**
-   **{ "message": "Estudiante agregado", "id": 1 }**
+   **Respuesta:{ "message": "Estudiante agregado", "id": 1 }**
+   
 
 6. Para actualizar un estudiante:
 
@@ -50,10 +49,10 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    curl -X PUT http://localhost:5000/students/1 -H "Content-Type: application/json" -d '{ "nombre": "Juan Pérez", "edad": 23, "carrera": "Ingeniería de Software" }'
    ```
 
-   **Respuesta:**
-   ``json
-   { "message": "Estudiante actualizado" }
-   ```
+   **Respuesta:{ "message": "Estudiante actualizado" }**
+  
+   
+   
 
 7. Para eliminar un estudiante:
 
@@ -61,10 +60,10 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    curl -X DELETE http://localhost:5000/students/1
    ```
 
-   **Respuesta:**
-   ``json
-   { "message": "Estudiante eliminado" }
-   ```
+   **Respuesta:{ "message": "Estudiante eliminado" }**
+
+   
+   
 
 8. Para comprobar los contenedores en ejecución:
 
