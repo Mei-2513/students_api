@@ -31,9 +31,9 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    ```
 
    **Ejemplo de respuesta:**
-   ```json
+   json
    [{ "carrera": "Ingeniería", "edad": 22, "id": 2, "nombre": "Juan" }]
-   ```
+
 
 5. Para agregar un nuevo estudiante:
 
@@ -42,9 +42,7 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    ```
 
    **Respuesta:**
-    json
-   { "message": "Estudiante agregado", "id": 1 }
-   ```
+   **{ "message": "Estudiante agregado", "id": 1 }**
 
 6. Para actualizar un estudiante:
 
