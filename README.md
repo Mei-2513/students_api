@@ -77,4 +77,16 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    docker-compose down
    ```
 
+ 10.Limpiar volúmenes de la base de datos (⚠️ Esto eliminará los datos guardados)
+```bash
+   docker-compose down -v
+   ```
+
+# 📁 Estructura del Proyecto
+📂 students_api/
+┣ 📄 app.py             # Código principal de la API
+┣ 📄 Dockerfile         # Configuración del contenedor Flask
+┣ 📄 docker-compose.yml # Configuración de los servicios con Docker Compose
+┣ 📄 requirements.txt   # Dependencias de Python
+┣ 📂 db/                # Carpeta para la base de datos PostgreSQL
 
