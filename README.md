@@ -42,7 +42,7 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    ```
 
    **Respuesta:**
-   ```json
+    json
    { "message": "Estudiante agregado", "id": 1 }
    ```
 
@@ -53,7 +53,7 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    ```
 
    **Respuesta:**
-   ```json
+   ``json
    { "message": "Estudiante actualizado" }
    ```
 
@@ -64,7 +64,7 @@ Este proyecto es una API en Flask que usa PostgreSQL como base de datos y se eje
    ```
 
    **Respuesta:**
-   ```json
+   ``json
    { "message": "Estudiante eliminado" }
    ```
 
