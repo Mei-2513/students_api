@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: admin      # Cambiar a "admin" para coincidir con app.py
+      POSTGRES_PASSWORD: admin  # Cambiar a "admin" para coincidir con app.py
+      POSTGRES_DB: students_db  # Cambiar a "students_db" para coincidir con app.py
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://admin:admin@db:5432/students_db  # Cambiar para coincidir con app.py
+    ports:
+      - "5000:5000"
+
